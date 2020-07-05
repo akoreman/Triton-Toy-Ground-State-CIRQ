@@ -1,0 +1,14 @@
+\documentclass[border=20pt]{standalone}
+
+\usepackage{braket}
+\usepackage{qcircuit}
+
+\begin{document}
+\Qcircuit @C=1em @R=1.5em{
+\lstick{\ket{q_0}} & \qw & \ctrl{4} & \qw & \qw &  \qw & \qw & \qw \\
+\lstick{\ket{q_1}} & \qw & \qw &  \qw  & \qw &  \qw\ & \qw & \qw\\
+\lstick{\ket{q_2}} & \qw  & \qw & \gate{H} & \ctrl{2} & \qw & \qw & \qw\\
+\lstick{\ket{q_3}} & \qw  & \qw & \qw & \qw & \gate{H} & \ctrl{1} & \qw\\ 
+\lstick{\ket{0}} & \qw & \targ & \qw & \targ & \qw & \targ &\meter
+}
+\end{document}
