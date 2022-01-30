@@ -4,6 +4,8 @@ Project to find estimates for the ground state of the Triton Toy Model as define
 
 The VQE is optimized using either a Nelder-Mead search or a naive grid search.
 
+<!--
 ## To do:
 
 Finish the Linear response section.
+-->
